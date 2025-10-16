@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment form</h1>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Step 1: Your details</legend>
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="First and last name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Eg. +92345 0000000">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Step 2: Delivery address</legend>
+                
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="post-code">Post code</label>
+                    <input type="text" id="post-code" name="post-code" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Step 3: Card details</legend>
+
+                <div class="form-group card-type-group">
+                    <label>Card type</label>
+                    <div class="card-options">
+                        <label class="radio-label">
+                            <input type="radio" name="card_type" value="visa" checked> 
+                            <span class="card-icon">💳 VISA</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="card_type" value="debit"> 
+                            <span class="card-icon">💳 Debit</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="card_type" value="mastercard"> 
+                            <span class="card-icon">💳 Mastercard</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-number">Card number</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="security-code">Security code</label>
+                    <input type="text" id="security-code" name="security-code" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-name">Name on card</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="Exact name as on the card" required>
+                </div>
+
+            </fieldset>
+            
+            <button type="submit" class="buy-button">BUY IT!</button>
+
+        </form>
+    </div>
+</body>
+</html>

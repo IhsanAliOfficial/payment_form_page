@@ -1,0 +1,134 @@
+/* Basic Reset and Font Setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for the page */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Main Form Container Styling */
+.container {
+    background-color: #ff5733; /* The primary orange-red color */
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white; /* Text color for the main form area */
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Fieldset/Step Styling */
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px; /* Space above the next fieldset/button */
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+/* Individual Form Group Styling */
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Input/Textarea Styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in the element's total width */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Placeholder text color customization */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Card Type Radio Button Styling */
+.card-type-group {
+    margin-bottom: 15px;
+}
+
+.card-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Style the custom radio button (the white dot) */
+input[type="radio"] {
+    /* Hide default radio button */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: transparent;
+    transition: background-color 0.1s;
+}
+
+/* Style the checkmark when radio button is selected */
+input[type="radio"]:checked {
+    background-color: white; /* Fill color when selected */
+}
+
+.card-icon {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+/* Buy Button Styling */
+.buy-button {
+    width: 150px;
+    padding: 12px 20px;
+    background-color: #d14728; /* A darker shade of red for the button */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Highly rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0; /* Center the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.buy-button:hover {
+    background-color: #a83a21; /* Slightly darker on hover */
+}
